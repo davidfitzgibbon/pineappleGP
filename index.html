@@ -4,454 +4,618 @@
 <head>
     <meta charset="UTF-8">
     <title>Pineapple GP</title>
-    <style type="text/css" class="cp-pen-styles">* {
-  padding: 0;
-  margin: 0;
-  line-height: 1.686;
-  font-weight: normal;
-  box-sizing: border-box;
-}
-
-html, body {
-  font-family: Helvetica;
-  font-size: 16px;
-  background: #F8E9D2;
-  color: #7C3A36;
-}
-
-h1, h2, h3 {
-  padding-bottom: 0.314em;
-  margin-top: 0.686em;
-  margin-bottom: 0.686em;
-  float: left;
-  width: 100%;
-}
-
-h1 {
-  border-bottom: 1px solid #7C3A36;
-  font-size: 3rem;
-  margin-top: 0.686em;
-}
-
-h2 {
-  font-size: 2.372rem;
-  border-bottom: 1px solid rgba(124, 58, 54, 0.314);
-  margin-top: 0.314em;
-}
-
-h3 {
-  font-size: 16px;
-  font-weight: bold;
-}
-
-a, a:visited, a:hover, a:focus {
-  color: #7C3A36;
-}
-
-p {
-  padding-bottom: 1.4em;
-}
-
-img {
-  max-width: 100%;
-}
-
-ul, ol {
-  list-style: none;
-}
-
-.fw-b {
-  font-weight: bold;
-}
-
-.ta-c {
-  text-align: center;
-}
-
-.d-7 {
-  font-size: 0.686rem;
-}
-
-.u-2 {
-  font-size: 1.686rem;
-}
-
-.u-3 {
-  font-size: 2.372rem;
-}
-
-.u-4 {
-  font-size: 2.686rem;
-}
-
-.u-5 {
-  font-size: 3rem;
-}
-
-.u-6 {
-  font-size: 3.686rem;
-}
-
-.u-7 {
-  font-size: 4rem;
-}
-
-.grid, [class*='unit'] {
-  float: left;
-  display: block;
-  overflow: visible;
-}
-
-.grid {
-  width: 100%;
-}
-
-.unit6-6 {
-  width: 100%;
-}
-
-.unit5-6 {
-  width: 83.33333%;
-}
-
-.unit4-6 {
-  width: 66.66667%;
-}
-
-.unit3-6 {
-  width: 50%;
-}
-
-.unit2-6 {
-  width: 33.33333%;
-}
-
-.unit1-6 {
-  width: 16.66667%;
-}
-
-.unit5-5 {
-  width: 100%;
-}
-
-.unit4-5 {
-  width: 80%;
-}
-
-.unit3-5 {
-  width: 60%;
-}
-
-.unit2-5 {
-  width: 40%;
-}
-
-.unit1-5 {
-  width: 20%;
-}
-
-.unit4-4 {
-  width: 100%;
-}
-
-.unit3-4 {
-  width: 75%;
-}
-
-.unit2-4 {
-  width: 50%;
-}
-
-.unit1-4 {
-  width: 25%;
-}
-
-.unit3-3 {
-  width: 100%;
-}
-
-.unit2-3 {
-  width: 66.66667%;
-}
-
-.unit1-3 {
-  width: 33.33333%;
-}
-
-.unit2-2 {
-  width: 100%;
-}
-
-.unit1-2 {
-  width: 50%;
-}
-
-.unit1-1 {
-  width: 100%;
-}
-
-@media (max-width: 34em) {
-  .unit1-1, .unit1-2, .unit1-3, .unit2-3, .unit1-4, .unit2-4, .unit3-4, .unit1-5, .unit2-5, .unit3-5, .unit4-5, .unit1-6, .unit2-6, .unit3-6, .unit4-6, .unit5-6 {
-    width: 100%;
-  }
-}
-.p {
-  padding: 1em 1rem;
-}
-
-.p-mj {
-  padding: 0.686em 0.686rem;
-}
-
-.p-mj_v {
-  padding: 0.686em 0;
-}
-
-.p-mj_h {
-  padding: 0 0.686rem;
-}
-
-.p-mn {
-  padding: 0.314em 0.314rem;
-}
-
-.p-mn_v {
-  padding: 0.314em 0;
-}
-
-.p-mn_h {
-  padding: 0 0.314rem;
-}
-
-.m {
-  margin: 1em 1rem;
-}
-
-.m-mj {
-  margin: 0.686em 0.686rem;
-}
-
-.m-mj_v {
-  margin: 0.686em 0;
-}
-
-.m-mj_h {
-  margin: 0 0.686rem;
-}
-
-.m-mn {
-  margin: 0.314em 0.314rem;
-}
-
-.m-mn_v {
-  margin: 0.314em 0;
-}
-
-.m-mn_h {
-  margin: 0 0.314rem;
-}
-
-.c-p {
-  color: #F8E9D2 !important;
-}
-
-.c-p_o_mj {
-  color: rgba(248, 233, 210, 0.686) !important;
-}
-
-.c-p_o_mn {
-  color: rgba(248, 233, 210, 0.314) !important;
-}
-
-.c-s {
-  color: #7C3A36 !important;
-}
-
-.c-s_o_mj {
-  color: rgba(124, 58, 54, 0.686) !important;
-}
-
-.c-s_o_mn {
-  color: rgba(124, 58, 54, 0.314) !important;
-}
-
-.b-p {
-  background: #F8E9D2 !important;
-}
-
-.b-p_o_mj {
-  background: rgba(248, 233, 210, 0.686) !important;
-}
-
-.b-p_o_mn {
-  background: rgba(248, 233, 210, 0.314) !important;
-}
-
-.b-s {
-  background: #7C3A36 !important;
-}
-
-.b-s_o_mj {
-  background: rgba(124, 58, 54, 0.686) !important;
-}
-
-.b-s_o_mn {
-  background: rgba(124, 58, 54, 0.314) !important;
-}
-
-.hide {
-  display: none;
-}
-</style>
-
-	<style>
-		.container {
-			max-width: 50em;
-			margin: 0 auto;
-		}
-		img{
-			border: 1px solid #7C3A36;
-		}
-		.btn {
-			background: #7C3A36;
-			color: #F8E9D2 !important;
-			padding: .4em 1em;
-			border-radius: .4em;
-			text-decoration: none;
-		}
-		a:hover {
-			opacity: .8;
-		}
-	</style>
+    <style type="text/css" class="cp-pen-styles">
+    * {
+        padding: 0;
+        margin: 0;
+        line-height: 1.686;
+        font-weight: normal;
+        box-sizing: border-box;
+    }
+    
+    html,
+    body {
+        font-family: Helvetica;
+        font-size: 16px;
+        background: #F8E9D2;
+        color: #7C3A36;
+    }
+    
+    h1,
+    h2,
+    h3 {
+        padding-bottom: 0.314em;
+        margin-top: 0.686em;
+        margin-bottom: 0.686em;
+        float: left;
+        width: 100%;
+    }
+    
+    h1 {
+        border-bottom: 1px solid #7C3A36;
+        font-size: 3rem;
+        margin-top: 0.686em;
+    }
+    
+    h2 {
+        font-size: 2.372rem;
+        border-bottom: 1px solid rgba(124, 58, 54, 0.314);
+        margin-top: 0.314em;
+    }
+    
+    h3 {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    a,
+    a:visited,
+    a:hover,
+    a:focus {
+        color: #7C3A36;
+    }
+    
+    p {
+        padding-bottom: 1.4em;
+    }
+    
+    img {
+        max-width: 100%;
+    }
+    
+    ul,
+    ol {
+        list-style: none;
+    }
+    
+    .fw-b {
+        font-weight: bold;
+    }
+    
+    .ta-c {
+        text-align: center;
+    }
+    
+    .d-7 {
+        font-size: 0.686rem;
+    }
+    
+    .u-2 {
+        font-size: 1.686rem;
+    }
+    
+    .u-3 {
+        font-size: 2.372rem;
+    }
+    
+    .u-4 {
+        font-size: 2.686rem;
+    }
+    
+    .u-5 {
+        font-size: 3rem;
+    }
+    
+    .u-6 {
+        font-size: 3.686rem;
+    }
+    
+    .u-7 {
+        font-size: 4rem;
+    }
+    
+    .grid,
+    [class*='unit'] {
+        float: left;
+        display: block;
+        overflow: visible;
+    }
+    
+    .grid {
+        width: 100%;
+    }
+    
+    .unit6-6 {
+        width: 100%;
+    }
+    
+    .unit5-6-sm {
+        width: 83.33333% !important;
+    }
+    
+    .unit5-6 {
+        width: 83.33333%;
+    }
+    
+    .unit4-6-sm {
+        width: 66.66667% !important;
+    }
+    
+    .unit4-6 {
+        width: 66.66667%;
+    }
+    
+    .unit3-6-sm {
+        width: 50% !important;
+    }
+    
+    .unit3-6 {
+        width: 50%;
+    }
+    
+    .unit2-6-sm {
+        width: 33.33333% !important;
+    }
+    
+    .unit2-6 {
+        width: 33.33333%;
+    }
+    
+    .unit1-6-sm {
+        width: 16.66667% !important;
+    }
+    
+    .unit1-6 {
+        width: 16.66667%;
+    }
+    
+    .unit0-6-sm {
+        width: 0% !important;
+    }
+    
+    .unit5-5 {
+        width: 100%;
+    }
+    
+    .unit4-5-sm {
+        width: 80% !important;
+    }
+    
+    .unit4-5 {
+        width: 80%;
+    }
+    
+    .unit3-5-sm {
+        width: 60% !important;
+    }
+    
+    .unit3-5 {
+        width: 60%;
+    }
+    
+    .unit2-5-sm {
+        width: 40% !important;
+    }
+    
+    .unit2-5 {
+        width: 40%;
+    }
+    
+    .unit1-5-sm {
+        width: 20% !important;
+    }
+    
+    .unit1-5 {
+        width: 20%;
+    }
+    
+    .unit0-5-sm {
+        width: 0% !important;
+    }
+    
+    .unit4-4 {
+        width: 100%;
+    }
+    
+    .unit3-4-sm {
+        width: 75% !important;
+    }
+    
+    .unit3-4 {
+        width: 75%;
+    }
+    
+    .unit2-4-sm {
+        width: 50% !important;
+    }
+    
+    .unit2-4 {
+        width: 50%;
+    }
+    
+    .unit1-4-sm {
+        width: 25% !important;
+    }
+    
+    .unit1-4 {
+        width: 25%;
+    }
+    
+    .unit0-4-sm {
+        width: 0% !important;
+    }
+    
+    .unit3-3 {
+        width: 100%;
+    }
+    
+    .unit2-3-sm {
+        width: 66.66667% !important;
+    }
+    
+    .unit2-3 {
+        width: 66.66667%;
+    }
+    
+    .unit1-3-sm {
+        width: 33.33333% !important;
+    }
+    
+    .unit1-3 {
+        width: 33.33333%;
+    }
+    
+    .unit0-3-sm {
+        width: 0% !important;
+    }
+    
+    .unit2-2 {
+        width: 100%;
+    }
+    
+    .unit1-2-sm {
+        width: 50% !important;
+    }
+    
+    .unit1-2 {
+        width: 50%;
+    }
+    
+    .unit0-2-sm {
+        width: 0% !important;
+    }
+    
+    .unit1-1 {
+        width: 100%;
+    }
+    
+    .unit0-1-sm {
+        width: 0% !important;
+    }
+    
+    @media (max-width: 34em) {
+        .unit1-1,
+        .unit1-2,
+        .unit1-3,
+        .unit2-3,
+        .unit1-4,
+        .unit2-4,
+        .unit3-4,
+        .unit1-5,
+        .unit2-5,
+        .unit3-5,
+        .unit4-5,
+        .unit1-6,
+        .unit2-6,
+        .unit3-6,
+        .unit4-6,
+        .unit5-6 {
+            width: 100%;
+        }
+    }
+    
+    .p {
+        padding: 1em 1rem;
+    }
+    
+    .p-mj {
+        padding: 0.686em 0.686rem;
+    }
+    
+    .p-mj_v {
+        padding: 0.686em 0;
+    }
+    
+    .p-mj_h {
+        padding: 0 0.686rem;
+    }
+    
+    .p-mn {
+        padding: 0.314em 0.314rem;
+    }
+    
+    .p-mn_v {
+        padding: 0.314em 0;
+    }
+    
+    .p-mn_h {
+        padding: 0 0.314rem;
+    }
+    
+    .m {
+        margin: 1em 1rem;
+    }
+    
+    .m-mj {
+        margin: 0.686em 0.686rem;
+    }
+    
+    .m-mj_v {
+        margin: 0.686em 0;
+    }
+    
+    .m-mj_h {
+        margin: 0 0.686rem;
+    }
+    
+    .m-mn {
+        margin: 0.314em 0.314rem;
+    }
+    
+    .m-mn_v {
+        margin: 0.314em 0;
+    }
+    
+    .m-mn_h {
+        margin: 0 0.314rem;
+    }
+    
+    .c-p {
+        color: #F8E9D2 !important;
+    }
+    
+    .c-p_o_mj {
+        color: rgba(248, 233, 210, 0.686) !important;
+    }
+    
+    .c-p_o_mn {
+        color: rgba(248, 233, 210, 0.314) !important;
+    }
+    
+    .c-s {
+        color: #7C3A36 !important;
+    }
+    
+    .c-s_o_mj {
+        color: rgba(124, 58, 54, 0.686) !important;
+    }
+    
+    .c-s_o_mn {
+        color: rgba(124, 58, 54, 0.314) !important;
+    }
+    
+    .b-p {
+        background: #F8E9D2 !important;
+    }
+    
+    .b-p_o_mj {
+        background: rgba(248, 233, 210, 0.686) !important;
+    }
+    
+    .b-p_o_mn {
+        background: rgba(248, 233, 210, 0.314) !important;
+    }
+    
+    .b-s {
+        background: #7C3A36 !important;
+    }
+    
+    .b-s_o_mj {
+        background: rgba(124, 58, 54, 0.686) !important;
+    }
+    
+    .b-s_o_mn {
+        background: rgba(124, 58, 54, 0.314) !important;
+    }
+    
+    .hide {
+        display: none;
+    }
+    </style>
+    <style>
+    .container {
+        max-width: 50em;
+        margin: 0 auto;
+    }
+    
+    img {
+        border: 1px solid #7C3A36;
+    }
+    
+    .btn {
+        background: #7C3A36;
+        color: #F8E9D2 !important;
+        padding: .4em 1em;
+        border-radius: .4em;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        opacity: .8;
+    }
+    </style>
 </head>
 
 <body class="p">
     <div class="container">
-    	<!-- HEADER -->
-    	<header class="grid">
-    		<a href="/" style="display: inline-block; text-align: center"><img src="header.png" style="border: 1px solid #7C3A36"></a>
-    	</header>
+        <!-- HEADER -->
+        <header class="grid">
+            <a href="/" style="display: inline-block; text-align: center"><img src="header.png" style="border: 1px solid #7C3A36"></a>
+        </header>
+        <!-- MENU -->
+        <div class="menu grid b-s c-p">
+            <div class="unit1-5 ta-c p-mn_v">
+                <a class="c-p" href="#join">How to join in</a>
+            </div>
+            <div class="unit1-5 ta-c p-mn_v">
+                <a class="c-p" href="#charities">The Charities</a>
+            </div>
+            <div class="unit1-5 ta-c p-mn_v">
+                <a class="c-p" href="#leaderboard">Leaderboard</a>
+            </div>
+            <div class="unit1-5 ta-c p-mn_v">
+                <a class="c-p" href="#prizes">Prizes</a>
+            </div>
+            <div class="unit1-5 ta-c p-mn_v">
+                <a class="c-p" href="#donate">Donate</a>
+            </div>
+        </div>
+        <!-- LEADERBOARD -->
+        <div class="leaderboard content grid m-mj_v hide">
+            <h2>Leaderboard</h2>
+            <div class="drivers">
+                <div class="driver grid ta-c">
+                    <span class="num unit1-5 unit1-5-sm fw-b">#12</span>
+                    <span class="driver unit3-5 unit3-5-sm">David "Fast Fitz" Fitzgibbon</span>
+                    <span class="donation unit1-5 unit1-5-sm fw-b">&euro; 55</span>
+                </div>
+                <div class="driver grid ta-c">
+                    <span class="num unit1-5 unit1-5-sm fw-b">#08</span>
+                    <span class="driver unit3-5 unit3-5-sm">Ruth "Killer" Kilcullen</span>
+                    <span class="donation unit1-5 unit1-5-sm fw-b">&euro; 5</span>
+                </div>
+                <div class="driver grid ta-c">
+                    <span class="num unit1-5 unit1-5-sm fw-b">#09</span>
+                    <span class="driver unit3-5 unit3-5-sm">James "Changing Lanes" O'Doherty</span>
+                    <span class="donation unit1-5 unit1-5-sm fw-b">&euro; 5</span>
+                </div>
+                <div class="driver grid ta-c">
+                    <span class="num unit1-5 unit1-5-sm fw-b">#06</span>
+                    <span class="driver unit3-5 unit3-5-sm">Conor Eyre</span>
+                    <span class="donation unit1-5 unit1-5-sm fw-b">&euro; 5</span>
+                </div>
+                <div class="driver grid ta-c">
+                    <span class="num unit1-5 unit1-5-sm fw-b">#01</span>
+                    <span class="driver unit3-5 unit3-5-sm">Pete "Yoshi" O'Connor</span>
+                    <span class="donation unit1-5 unit1-5-sm fw-b">-</span>
+                </div>
+                <div class="driver grid ta-c">
+                    <span class="num unit1-5 unit1-5-sm fw-b">#02</span>
+                    <span class="driver unit3-5 unit3-5-sm">'Nifty' Niall O Shea</span>
+                    <span class="donation unit1-5 unit1-5-sm fw-b">-</span>
+                </div>
+                <div class="driver grid ta-c">
+                    <span class="num unit1-5 unit1-5-sm fw-b">#03</span>
+                    <span class="driver unit3-5 unit3-5-sm">Ciara 'Calamitous' Brophy</span>
+                    <span class="donation unit1-5 unit1-5-sm fw-b">-</span>
+                </div>
+                <div class="driver grid ta-c">
+                    <span class="num unit1-5 unit1-5-sm fw-b">#04</span>
+                    <span class="driver unit3-5 unit3-5-sm">Alan "Fartbox" Smyth</span>
+                    <span class="donation unit1-5 unit1-5-sm fw-b">-</span>
+                </div>
+                <div class="driver grid ta-c">
+                    <span class="num unit1-5 unit1-5-sm fw-b">#05</span>
+                    <span class="driver unit3-5 unit3-5-sm">Slightshot Ste</span>
+                    <span class="donation unit1-5 unit1-5-sm fw-b">-</span>
+                </div>
+                <div class="driver grid ta-c">
+                    <span class="num unit1-5 unit1-5-sm fw-b">#07</span>
+                    <span class="driver unit3-5 unit3-5-sm">Jennie "The Stig" Breen</span>
+                    <span class="donation unit1-5 unit1-5-sm fw-b">-</span>
+                </div>
+                <div class="driver grid ta-c">
+                    <span class="num unit1-5 unit1-5-sm fw-b">#10</span>
+                    <span class="driver unit3-5 unit3-5-sm">Tim "Iceman" FitzG</span>
+                    <span class="donation unit1-5 unit1-5-sm fw-b">-</span>
+                </div>
+                <div class="driver grid ta-c">
+                    <span class="num unit1-5 unit1-5-sm fw-b">#11</span>
+                    <span class="driver unit3-5 unit3-5-sm">Dermot "Danger" Dooley</span>
+                    <span class="donation unit1-5 unit1-5-sm fw-b">-</span>
+                </div>
+                <div class="driver grid ta-c">
+                    <span class="num unit1-5 unit1-5-sm fw-b">#13</span>
+                    <span class="driver unit3-5 unit3-5-sm">Helen "Hell's Highway" Sweeney</span>
+                    <span class="donation unit1-5 unit1-5-sm fw-b">-</span>
+                </div>
+                <div class="driver grid ta-c">
+                    <span class="num unit1-5 unit1-5-sm fw-b">#14</span>
+                    <span class="driver unit3-5 unit3-5-sm">Rachel "Road Rage" Conway</span>
+                    <span class="donation unit1-5 unit1-5-sm fw-b">-</span>
+                </div>
+                <div class="driver grid ta-c">
+                    <span class="num unit1-5 unit1-5-sm fw-b">#15</span>
+                    <span class="driver unit3-5 unit3-5-sm">Fiona "Reckless" O'Regan</span>
+                    <span class="donation unit1-5 unit1-5-sm fw-b">-</span>
+                </div>
+                <div class="driver grid ta-c">
+                    <span class="num unit1-5 unit1-5-sm fw-b">#16</span>
+                    <span class="driver unit3-5 unit3-5-sm">Ciarán "Curb Crawler" O'Neill</span>
+                    <span class="donation unit1-5 unit1-5-sm fw-b">-</span>
+                </div>
+            </div>
+        </div>
+        <!-- JOIN -->
+        <div class="join content grid m-mj_v hide">
+            <h2>How to join in</h2>
+            <p>The plan is to give you fine people the opportunity to race some karts, eat pizza and gamble, all while helping out two very worthy charities <a href="http://www.jigsaw.ie/">Jigsaw</a> and <a href="http://www.ruhama.ie/">Ruhama</a>!</p>
 
-		<!-- MENU -->
-    	<div class="menu grid b-s c-p">
-			<div class="unit1-5 ta-c p-mn_v">
-				<a class="c-p" href="#join">How to join in</a>
-			</div>
-			<div class="unit1-5 ta-c p-mn_v">
-				<a class="c-p" href="#charities">The Charities</a>
-			</div>
-			<div class="unit1-5 ta-c p-mn_v">
-				<a class="c-p" href="#leaderboard">Leaderboard</a>
-			</div>
-			<div class="unit1-5 ta-c p-mn_v">
-				<a class="c-p" href="#prizes">Prizes</a>
-			</div>
-			<div class="unit1-5 ta-c p-mn_v">
-				<a class="c-p" href="#donate">Donate</a>
-			</div>
-    	</div>
-
-		<!-- LEADERBOARD -->
-    	<div class="leaderboard content grid m-mj_v hide">
-    		<h2>Leaderboard</h2>
-    		<p>Drivers will be added as people sign up!</p>
-    	</div>
-
-		<!-- JOIN -->
-    	<div class="join content grid m-mj_v hide">
-    		<h2>How to join in</h2>
-
-    		<p>The plan is to give you fine people the opportunity to race some karts, eat pizza and gamble, all while helping out two very worthy charities <a href="http://www.jigsaw.ie/">Jigsaw</a> and <a href="http://www.ruhama.ie/">Ruhama</a>!</p>
-
-    		<p>There are two parts to the day, the driving and the donation raffle:</p>
-
-    		<h3>Part 1: Drivers</h3>
-			<p>16 of you lucky people will be able to take part in a go karting championship at <span class="fw-b">Kylemore Karts March 25th at 3pm</span>. </p>
-
-			<p><a class="btn" href="https://ti.to/pineapple-gp/signup">Sign up here to get a ticket.</a>
-			</p>
-
-			<p>Drivers will need to pay &euro;20 on the day to take part.</p>
-
-			<p>There are <a href="#prizes">prizes</a> for the top three finishers and the driver who's supporters raise the most.</p>
-
-			<p>Spectators are welcome to come along on the day too, there'll be pizza!</p>
-
-			<h3>Part 2: Donation Raffle</h3>
-			<p>When you donate, you can vote a driver. If they win the race, you'll be put into a raffle to win a <a href="#prizes">prize</a>!</p>
-
-			<p><a class="btn" href="https://www.idonate.ie/fundraiser/11362103_pineapple-gp.html">Donation Page</a></p>
-    	</div>
-
-		<!-- CHARITIES -->
-		<div class="charities content grid m-mj_v hide">
-			<h2>Charities</h2>
-
-
-			<a href="http://www.jigsaw.ie/"><img src="jigsaw.jpg"></a>
-
-			<p>Jigsaw - the National Centre for Youth Mental Health exists to change how Ireland thinks about and responds to young people’s mental health, through Research, Engagement and Services. </p>
-
-			<p>They know that young people are experiencing high levels of distress and don't know where to turn for help.  75% of adult mental health difficulties arise before the age of 25.  Yet, mental health services are often difficult to access or simply don’t work for young people.</p>
-
-			<p>Jigsaw was set up to respond to this urgent need.   </p>
-
-			
-			<a href="http://www.ruhama.ie/"><img src="ruhama.jpg"></a>
-			
-			<p>Ruhama is a Dublin-based NGO which works on a national level with women affected by prostitution and other forms of commercial sexual exploitation. </p>
-
-			<p>Our services are comprehensive to meet the broad range of experiences of women affected by prostitution.</p>
-
-			<p>We provide a service to women who are currently involved in on-street and off-street prostitution; women who are exiting prostitution; women who are victims of sex trafficking; and women who have a history of prostitution.</p>
-		</div>
-
-		<!-- PRIZES -->
-    	<div class="prizes content grid m-mj_v hide">
-    		<h2>Prizes</h2>
-
-			<h3>Drivers</h3>
-			<ul>
-				<li>1st place - €50 and a mystery gift</li>
-				<li>2nd place - mystery gift</li>
-				<li>3rd place - mystery gift</li>
-				<li>Highest supporter donations - €50 and a mystery gift</li>
-			</ul>
-
-			<h3>Donation Raffle</h3>
-			<p>All supporters of the race winner are entered into a raffle.</p>
-			<p>Raffle winner - €50 and a mystery gift</p>
-    	</div>
-
-		<!-- DONATE -->
-    	<div class="donate content grid m-mj_v hide">
-    		<h2>Donate</h2>
-
-    		<p>You can donate here:</p>
-
-    		<p><a class="btn" href="https://www.idonate.ie/fundraiser/11362103_pineapple-gp.html">Donation Page</a></p>
-
-    		<p>Dont forget to vote for a driver!</p>
-    	</div>
-
-		<!-- FOOTER -->
-    	<div class="footer grid ta-c m-mj_v" style="border-top: 1px solid #7C3A36">&copy; Pineapple 2017</div>
+            <h3>Donation Raffle</h3>
+            <p>When you donate, you can vote a driver. If they win the race, you'll be put into a raffle to win a <a href="#prizes">prize</a>!</p>
+            <p><a class="btn" href="https://www.idonate.ie/fundraiser/11362103_pineapple-gp.html">Donation Page</a></p>
+        </div>
+        <!-- CHARITIES -->
+        <div class="charities content grid m-mj_v hide">
+            <h2>Charities</h2>
+            <a href="http://www.jigsaw.ie/"><img src="jigsaw.jpg"></a>
+            <p>Jigsaw - the National Centre for Youth Mental Health exists to change how Ireland thinks about and responds to young people’s mental health, through Research, Engagement and Services. </p>
+            <p>They know that young people are experiencing high levels of distress and don't know where to turn for help. 75% of adult mental health difficulties arise before the age of 25. Yet, mental health services are often difficult to access or simply don’t work for young people.</p>
+            <p>Jigsaw was set up to respond to this urgent need. </p>
+            <a href="http://www.ruhama.ie/"><img src="ruhama.jpg"></a>
+            <p>Ruhama is a Dublin-based NGO which works on a national level with women affected by prostitution and other forms of commercial sexual exploitation. </p>
+            <p>Our services are comprehensive to meet the broad range of experiences of women affected by prostitution.</p>
+            <p>We provide a service to women who are currently involved in on-street and off-street prostitution; women who are exiting prostitution; women who are victims of sex trafficking; and women who have a history of prostitution.</p>
+        </div>
+        <!-- PRIZES -->
+        <div class="prizes content grid m-mj_v hide">
+            <h2>Prizes</h2>
+            <h3>Drivers</h3>
+            <ul>
+                <li>1st place - €50 and a mystery gift</li>
+                <li>2nd place - mystery gift</li>
+                <li>3rd place - mystery gift</li>
+                <li>Highest supporter donations - €50 and a mystery gift</li>
+            </ul>
+            <h3>Donation Raffle</h3>
+            <p>All supporters of the race winner are entered into a raffle.</p>
+            <p>Raffle winner - €50 and a mystery gift</p>
+        </div>
+        <!-- DONATE -->
+        <div class="donate content grid m-mj_v hide">
+            <h2>Donate</h2>
+            <p>You can donate here:</p>
+            <p><a class="btn" href="https://www.idonate.ie/fundraiser/11362103_pineapple-gp.html">Donation Page</a></p>
+            <p>Dont forget to vote for a driver!</p>
+        </div>
+        <!-- FOOTER -->
+        <div class="footer grid ta-c m-mj_v" style="border-top: 1px solid #7C3A36">&copy; Pineapple 2017</div>
     </div>
-	
-	<!-- SCRIPTS -->
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script>
-    	$(function(){
-    		var changePage = function(){
-				$('.content').addClass('hide');
-	    		var selected = (window.location.hash).replace('#', '') || "join";	
-	    		$('.'+selected).removeClass('hide')
-    		}
+    $(function() {
+        var changePage = function() {
+            $('.content').addClass('hide');
+            var selected = (window.location.hash).replace('#', '') || "join";
+            $('.' + selected).removeClass('hide')
+        }
 
-    		$(window).bind( 'hashchange', function(e) { changePage() });
+        $(window).bind('hashchange', function(e) {
+            changePage()
+        });
 
-    		changePage();
-    	});
+        changePage();
+    });
+
+    $.ajax({
+       url:"https://www.idonate.ie/fundraiser/11362103_pineapple-gp.html",
+       type:'GET',
+       success: function(data){
+           var content = $('#donors').html($(data).find('#donors').html());
+           console.log(content)
+       }
+    });
     </script>
 </body>
 
